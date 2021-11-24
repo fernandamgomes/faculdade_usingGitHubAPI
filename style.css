@@ -1,0 +1,377 @@
+/* ---------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------------- */
+
+html, 
+body  {
+  background-color: #fff;
+  color: rgb(55, 55, 55);
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+
+
+section {
+    margin-top: 80px !important;
+}
+
+@media screen and (max-width: 991.9px){
+    section {
+        margin-top: 50px !important;
+    }
+    
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 210%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  color: #4f6367;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 180%;
+    }
+}
+
+@media screen and (max-width: 767.9px) {
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+h2 {
+  font-size: 160%;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: #7a9e9f;
+}
+
+h3 {
+  font-size: 120%;
+  margin-bottom: 18px;
+  color: #7a9e9f;
+}
+
+p b {
+    color: #7a9e9f;
+}
+
+a {
+    text-decoration: none;
+}
+
+main a:link,  a:visited {
+    color: #7a9e9f;
+    transition: color 0.3s;
+}
+main a:hover {
+    color: #b8d8d8;
+}
+
+
+
+@media screen and (max-width: 767.9px) {
+   .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.container-botao {
+    text-align: end;
+    padding-top: 20px;
+}
+
+.btn-outline-dark {
+    border: 1px solid #7a9e9f;
+    color: #7a9e9f;
+}
+
+.btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark:active, .btn-outline-dark.active, .open>.dropdown-toggle.btn-outline-dark {
+    color: #fff;
+    background-color: #b8d8d8;
+    border-color: #b8d8d8;
+}
+
+
+
+
+/* ---------------------------------------------- */
+/* HEADER */
+/* ---------------------------------------------- */
+.navbar-toggler {
+    font-size: 80%;   
+}
+
+.nav-item {
+    padding-right: 8px;
+}
+
+.nav-item:first-of-type{
+    padding-left: 20px;
+}
+
+@media screen and (max-width:991.9px) {
+    .nav-item:first-of-type{
+      padding-left: 0px;
+  }
+}
+
+.main-text {
+    margin-bottom: 5px;
+}
+
+
+/* ---------------------------------------------- */
+/* PERFIL */
+/* ---------------------------------------------- */
+
+.texto-perfil {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.foto-perfil {
+    width: 100%;
+}
+@media screen and (max-width:767.9px) {
+    .foto-perfil {
+        padding-bottom: 35px;
+    }
+}
+
+.social-media h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+.social-media ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 185%;
+    letter-spacing: 5.5px;
+    padding-top: 5px;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-left: 0;
+}
+
+.social-media li a:link, 
+.social-media li a:visited {
+    color: #b8d8d8;
+} 
+
+.social-media li a:hover, 
+.social-media li a:active {
+    color: #7a9e9f;
+    transition: color 0.3s;
+} 
+
+
+.texto-perfil {
+    padding-left: 50px;
+    text-align: justify;
+}
+@media screen and (max-width: 767.9px) {
+    .texto-perfil {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .perfil h1 {
+        text-align: center;
+    }
+}
+
+
+/* ---------------------------------------------- */
+/* GIT*/
+/* ---------------------------------------------- */
+
+
+
+.git {
+    background-color: #eae1df2f;
+}
+
+
+
+.git img {
+    width: 90%;
+}
+
+.img-git {
+    text-align: left;
+}
+
+.git p {
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.git .container-botao {
+    padding-right: 20px;
+}
+
+#repositorios p {
+    margin-bottom: 1.5px;
+}
+
+#repositorios {
+    padding: 40px 0;
+}
+
+@media screen and (max-width:991.9px){
+    #repositorios h3, .img-git {
+        margin-top: 30px;
+    }
+
+    #repositorios h1 {
+      margin-bottom: 10px;
+    }
+}
+
+
+
+/* ---------------------------------------------- */
+/* PESQUISA USUARIOS */
+/* ---------------------------------------------- */
+
+
+form {
+    margin-bottom: 50px;
+}
+
+#btn-pesquisa {
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #7a9e9f;
+    border: solid 1px #7a9e9f;
+    margin-left: 10px;
+    margin-top: 30px;
+    transition: color 0.2s;
+}
+
+#btn-pesquisa:hover {
+    background-color: #b8d8d8;
+    color: rgb(255, 255, 255);
+    border: solid 1px #b8d8d8;
+}
+
+
+#containerUsuario,
+#pesquisa {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-user {
+    margin-top:30px;
+    background-color: #eae1df2f;
+    padding: 30px;
+}
+
+
+@media screen and (max-width: 991.9px){
+    #pesquisa, 
+    #containerUsuario {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 767.9px){
+    #pesquisa,
+    #containerUsuario {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #avatar {
+        width: 70% !important;
+        margin-bottom: 5px;
+    }
+
+    .container-user {
+        padding: 20px 12px;
+    }
+    
+    .img-align {
+        text-align: center !important;
+    }
+}
+
+#link a {
+    padding-left: 0;
+    padding-top: 0;
+}
+
+#link a:link,  a:visited {
+    color: #7a9e9f;
+    transition: color 0.3s;
+}
+#link a:hover {
+    color: #b8d8d8;
+}
+
+div.col-sm-12 > h3 {
+    margin-bottom: 10px;
+}
+
+#avatar {
+    width: 60%;
+    border-radius: 50%;
+}
+
+.img-align {
+    text-align: right;
+}
+
+
+/* ---------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------- */
+
+.footer {
+    margin-top: 100px;
+    max-width: 100%;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom:30px;
+    text-align: center;
+    color: rgb(219, 219, 219);
+    background-color: rgb(55, 55, 55);
+}
+
+@media screen and (max-width: 991.9px) {
+    .footer {
+        margin-top: 60px;
+    }
+}
+
+
+.footer p {
+    display: inline;
+}
